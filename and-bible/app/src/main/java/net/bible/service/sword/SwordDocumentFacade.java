@@ -218,6 +218,8 @@ public class SwordDocumentFacade {
 			repoBookDeduplicator.addAll(repoFactory.getXiphosRepo().getRepoBooks(refresh));
 	
 			repoBookDeduplicator.addAll(repoFactory.getEBibleRepo().getRepoBooks(refresh));
+			
+			repoBookDeduplicator.addAll(repoFactory.getbiblesparkRepo().getRepoBooks(refresh));
 	        
 			// beta repo must never override live books especially if later version so use addIfNotExists
 			repoBookDeduplicator.addIfNotExists(repoFactory.getBetaRepo().getRepoBooks(refresh));
