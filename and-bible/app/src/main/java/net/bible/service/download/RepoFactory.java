@@ -21,6 +21,8 @@ public class RepoFactory {
 	private WycliffeRepo wycliffeRepo = new WycliffeRepo();
 
 	private EBibleRepo eBibleRepo = new EBibleRepo();
+	
+	private biblesparkRepo biblesparkRepo = new biblesparkRepo();
 
 	private static RepoFactory instance = new RepoFactory();
 	private RepoFactory() {}
@@ -49,6 +51,8 @@ public class RepoFactory {
 			repoForBook = wycliffeRepo;
 		} else if (eBibleRepo.getRepoName().equals(repoName)) {
 			repoForBook = eBibleRepo;
+			} else if (biblesparkRepo.getRepoName().equals(repoName)) {
+			repoForBook = biblesparkRepo;
 		} else {
 			repoForBook = crosswireRepo;
 		}
@@ -76,4 +80,7 @@ public class RepoFactory {
 	public EBibleRepo getEBibleRepo() {
 		return eBibleRepo;
 	}
+	public biblesparkRepo getbiblesparkRepo() {
+ 		return biblesparkRepo;
+ 	}
 }
