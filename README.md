@@ -1,5 +1,5 @@
 # and-bible
-Offline Bible on Android
+Offline Bible Study on Android
 
 Please see the [Home Page](http://mjdenham.github.io/and-bible/).
 
